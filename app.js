@@ -23,7 +23,7 @@ app.get("/cupcakes", function(req, res){
 })
 
 // Create
-app.put("/cupcakes/", function(req, res){
+app.post("/cupcakes/", function(req, res){
   res.json(cupcakeDB.create(req.body))
 })
 
@@ -33,7 +33,7 @@ app.get("/cupcakes/:flavorId", function(req, res){
 })
 
 // Update
-app.post("/cupcakes/:flavorId", function(req, res){
+app.put("/cupcakes/:flavorId", function(req, res){
   res.json(cupcakeDB.update(req.params.flavorId, req.body))
 })
 

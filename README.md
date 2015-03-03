@@ -31,8 +31,8 @@ There are a few pre-built routes in the node.js application that also serves up 
 
 * **GET** `/cupcakes` -- Returns a list of cupcake flavors on sale at a bakery
 * **GET** `/cupcakes/:flavorId` -- Returns details about a specific cupcake flavor
-* **PUT** `/cupcakes` -- Creates a new cupcake flavor for sale
-* **POST** `/cupcakes/:flavorId` -- Updates the details about a specific cupcake flavor
+* **POST** `/cupcakes` -- Creates a new cupcake flavor for sale
+* **PUT** `/cupcakes/:flavorId` -- Updates the details about a specific cupcake flavor
 * **DELETE** `/cupcakes/:flavorId` -- Obliterates every red velvet cupcake (or some other specific flavor, I guess)
 
 These should correspond to the default routes used by `Backbone.Sync`. You won't need to modify the server-side code.
