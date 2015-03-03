@@ -25,7 +25,7 @@ The UI should be able to do a few tasks, at a minimum:
 
 You'll want to build and leverage a own Handlebars template for this. `data-` attributes and dynamic listeners will probably be necessary! Don't worry, we're going to cover `Backbone.View` tomorrow, so this might be the last time you'll need to do this for a while. (At least you don't need to write AJAX anymore!)
 
-The Cupcake model should do some client-side `.validate()`-ion -- specifically, all cupcake flavors need to have `frosting`, `cake`, and `sprinkles` attributes, and the `sprinkles` attribute should be either `true` or `false`.
+The Cupcake model should do some client-side `.validate()`-ion -- specifically, all cupcake flavors need to have `icing`, `cake`, and `sprinkles` attributes, and the `sprinkles` attribute should be either `true` or `false`.
 
 There are a few pre-built routes in the node.js application that also serves up the files:
 
