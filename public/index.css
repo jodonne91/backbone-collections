@@ -1,0 +1,11 @@
+li{
+	list-style-type: none;
+}
+
+.display{
+	display: inline-block;
+}
+
+.hidden{
+	display: none;
+}

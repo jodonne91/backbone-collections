@@ -7,11 +7,64 @@
     <script src="libs/jquery.js"></script>
     <script src="libs/handlebars.js"></script>
     <script src="libs/backbone.js"></script>
+    <link href="index.css" rel="stylesheet"/>
 
   </head>
   <body>
     
     <script src="cupcakes.js"></script>
+
+    <h1>Kate's Cupcake Shop</h1>
+    <h3>CUPCAKES!!!!</h1>
+
+      <button class="update">Show All</button>
+
+      
+      <h4>Icing</h4><input type = "text" class = "entry flavor-entry icing-entry"></input>
+      <h4>Cake</h4><input type = "text" class = "entry flavor-entry cake-entry"></input>
+      
+      <form class = "frosting">
+      <input type = "radio" id = "sprinkles" name="sprinkles" value="yes"><strong>Sprinkles</strong></input>
+      <input type = "radio" id = "sprinkles" name="sprinkles" value="no"><strong>No Sprinkles</strong></input>
+      </form>
+
+      <button class = "add-button">Add Flavor</button>
+
+      <ul class = "cupcakes">
+
+
+      </ul>
+
+    <script type="x-handlebars-template" id="cupcake-template">
+      
+      <li class = "cupcake"> 
+      CUPCAKE
+        <div class = "display">
+          <ul>
+            <li class = "attribute cake">
+              <h4 class = "inline">Cake</h5>{{cake}}
+            </li>
+            <li class = "attribute icing">
+              <h4 class = "Cake">Frosting</h5>{{icing}}
+            </li>
+            <li class = "attribute sprinkles">
+              <h4 class = "Cake">Sprinkles</h5>{{sprinkles}}
+            </li>
+            <button class = "delete-button" id="{{id}}">Delete</button>
+        </div>
+        <div class = "update">
+          <button class = "update-button" id="{{id}}">Update</button>
+          <div class = "update-form hidden" id="{{id}}">
+            <input type="text" class = "icing-update">New Frosting</input>
+            <input type="text" class = "cake-update">New Cake</input>
+            <input type = "radio" class = "sprinkles-update" id = "{{id}}" name="update-sprinkles" value="yes">Sprinkles</input>
+            <input type = "radio" class = "sprinkles-update" id = "{{id}}" name="update-sprinkles" value="no">No Sprinkles</input>
+            <button class="commit-update" id="{{id}}">Commit Update</button>
+            <button class="cancel-update">Cancel</button>
+          </div>
+      </li>
+
+    </script>
 
   </body>
 </html>
